@@ -9,4 +9,5 @@ The executable part of the code has the following architecture:
 If we decrypt, we simply create a new password based on the key and password, which goes through pbkdf2 and decrypts the session key, and then the notepad itself is decrypted based on it.
 If we encrypt, we generate a new session key, which is comparable in size to the size of the notepad itself, and encrypt based on the password and key, as was said above.
 Data should be written between decryptions in blocknote.txt.
+Program for windows, and when you start it, program will creat a folder "Blocknote_Protection".
 ALL.
